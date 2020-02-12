@@ -1,4 +1,5 @@
 @extends('layouts.master')
+@section('siteName','Altor Alpha Fund')
 @section('content')
 	<div>
 		@if(isset($investor))

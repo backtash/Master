@@ -21,7 +21,7 @@
 					@foreach($investors as $investor)
 					 <tr>
 						<td> <a href="/investors/{{$investor->user_id}}">{{$investor->user_id}}</a></td>
-						<td> {{$investor->firstname}} {{$investor->middlename}} {{$investor->lastname}} </td>
+						<td> <a href="/investors/{{$investor->user_id}}">{{$investor->firstname}} {{$investor->middlename}} {{$investor->lastname}}</a> </td>
 						<td> {{$investor->mobile_phoneno}} <br> {{$investor->email}} </td>
 						<td> {{$investor->dateofbirth}} </td>
 						<td> {{$investor->typeofid}} <br>{{$investor->idnumber}} </td>
@@ -33,6 +33,9 @@
 					@endforeach
 				</tbody>
 			</table>
+		</div>
+		<div class="row textcenter">
+			 {{$investors->links()}} 
 		</div>
 	</div>
 @endsection

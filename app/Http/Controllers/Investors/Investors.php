@@ -4,8 +4,10 @@ namespace App\Http\Controllers\Investors;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Models\Investor;
 use App\Models\Application;
+
 use Auth;
 
 class Investors extends Controller
@@ -25,7 +27,7 @@ class Investors extends Controller
     {
         //
 		
-		$investors=Investor::all();
+		$investors=Investor::orderBy('user_id','DESC')->paginate(15);
 		return view('investors.investors')->with('investors',$investors);
 		
     }
