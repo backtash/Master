@@ -34,8 +34,11 @@
 				</tbody>
 			</table>
 		</div>
-		<div class="row textcenter">
-			 {{$investors->links()}} 
+		<hr>
+		<div class="row text-center">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4 text-center"> {{$investors->links()}} </div>
+			<div class="col-sm-4"></div>
 		</div>
 	</div>
 @endsection
