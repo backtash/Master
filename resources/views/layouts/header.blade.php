@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-  <a class="navbar-brand" href="#">Altor Alpha Fund</a>
+<nav class="navbar navbar-expand-md bg-light navbar-light">
+  <a class="navbar-brand" href="#"> @yield('siteName','Master Car Removals')</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>

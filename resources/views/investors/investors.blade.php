@@ -1,13 +1,14 @@
 @extends('layouts.master')
+@section('siteName','Altor Alpha Fund')
 @section('content')
 	<div>
 		<div>
 		<h2> Investors in Altor Alpha Fund</h2>
 		</div>
 		<div>
-			<table class="table table-hover table-responsive">
+			<table class="table table-hover table-responsive ">
 				<thead>
-					<tr>
+					<tr class="table-primary">
 						<th> Investor number </th>
 						<th> Investor Name </th>
 						<th> Contact Details</th>
